@@ -1,0 +1,15 @@
+CREATE DATABASE Movie;
+USE Movie;
+CREATE TABLE Cinema(
+movie_id INT PRIMARY KEY,AUTO_INCREMENT,
+language(VARCHAR(20)),
+rating(int check rating<=10)
+);
+INSERT INTO Cinema WHERE rating>7;
+SELECT*FROM Cinema Where Language='Hindi'OR rating<5;
+SELECT DISTINCT Language FROM Cinema;
+SELECT*FROM Cinema ORDER BY rating DESC LIMIT 2;
+SELECT*FROM Cinema WHERE Rating BETWEEN 5 AND 9 ORDER BY RATING;
+SELECT*FROM Cinema ORDER BY rating DESC LIMIT1;
+DROP TABLE IF EXISTS Cinema
+
